@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>4074137224</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\rtc\adi_rtc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\sys\ADuCM302x_typedefs.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\ssdd_common\common_def.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\int\adi_int.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\config\adi_rtc_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\rtc\adi_rtc_data_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\rtc\adi_rtc_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\pwr\adi_pwr.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\rtc\adi_rtc.c</file>
+      <file>$PROJ_DIR$\..\..\rtc_alarm.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\drivers\uart\adi_uart.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\wdt\adi_wdt.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\wdt\adi_wdt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\system.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\drivers\uart\adi_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\config\adi_wdt_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\config\adi_uart_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\pwr\adi_pwr_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\drivers\uart\adi_uart_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\drivers\uart\adi_uart_data_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\config\adi_pwr_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\drivers\uart\adi_uart_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\wdt\adi_wdt_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\gpio\adi_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\pwr\adi_pwr_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\startup.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\ADuCM3029_device.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\system.c</file>
+      <file>$PROJ_DIR$\..\..\Readme_rtc_alarm.html</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\wdt\adi_wdt_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\sys\ADuCM302x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\sys\ADuCM302x_cdef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\gpio\adi_gpio_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\wdt\adi_wdt_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\pwr\adi_pwr_v1.h</file>
+      <file>$PROJ_DIR$\..\..\rtc_alarm.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\drivers\uart\adi_uart_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\startup.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\dma\adi_dma_pl230_v2.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\pwr\adi_pwr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\dma\adi_dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\services\rtc\adi_rtc_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\common.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm3.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\config\adi_global_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\sys\ADuCM302x_device.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\rtc\adi_rtc_v1.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\ADuCM3029.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\ADuCM3029_cdef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\rtc_alarm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_pwr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_uart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_wdt.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\rtc_alarm.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_wdt.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_uart.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_rtc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_rtc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\rtc_alarm.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\rtc_alarm.out</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\adi_processor.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\inc\adi_types.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_pwr.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\gpio\adi_gpio_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\gpio\adi_gpio_v1.c</file>
+      <file>$PROJ_DIR$\..\..\RTC_LEDBlink.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\src\services\gpio\adi_gpio.c</file>
+      <file>$PROJ_DIR$\..\..\RTC_LEDBlink_Hiberbate.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_wdt.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\RTC_LEDBlink.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_uart.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_rtc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_pwr.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_gpio.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\RTC_LEDBlink_Hiberbate.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\RTC_LEDBlink.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_gpio.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\RTC_LEDBlink.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_gpio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\RTC_LEDBlink_Hiberbate.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\config\linker\AnalogDevices\ADuCM3029.icf</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\services\pwr\adi_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 61 80 56 59 10 62 90 25 63 64 1 57 32 88 91 34 41 40 37 67 38 6 5 66 21 50 58 44 89 4 8 28 31 87 49 42</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 25 4 88 10 58 91 87 21 49 8 32 28 50 44 31 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\services\rtc\adi_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 60 4 88 7 0 68 8 10 58 91 87 3 54 9 2 12 13 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\rtc_alarm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87 65 62 48 80 45 44 61 91 67 49 50 88 63 64 66 90 51 55 1 56 59 53 0 3 21 37 38 52 68 34 41 40 6 5 58 54 19 39 23 10 9 57 89 4 22 26 7 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\drivers\uart\adi_uart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66 80 10 56 59 67 38 62 6 49 29 63 64 61 37 26 50 88 68 90 34 41 40 1 65 5 8 91 87 7 24 48 44 57 89 22 27 58 0 53 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 29 24 58 8 10 91 87 22 26 49 88 0 68 7 53 48 50 44 27 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\services\wdt\adi_wdt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 75</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 10 62 58 88 56 59 67 38 6 30 43 63 64 61 37 66 8 34 41 40 80 1 65 57 89 0 49 19 87 90 68 91 39 23</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 43 0 88 68 10 58 91 87 49 8 19 39 23 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63 51 80 64 53 19 65 52 88 39 61 66 48 44 49 62 1 90 56 59 57 89 23 87 4 0 22 37 67 38 68 34 41 40 6 91 58 10 55 5 26 7 50 24</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55 61 80 62 37 1 65 67 38 51 88 52 4 49 0 68 19 90 63 64 41 40 34 59 6 56 5 66 89 57 39 91 87 10 58 23 22 26 7 53 48 50 44 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 59 89 56 90 80 1 49 58 63 64 61 62 65 66 21 91 34 41 40 37 67 38 6 5 88 47 87</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 91 87 58 21 49 88</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\system.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 87 58 62 80 1 91 88 56 59 6 10 65 63 64 57 21 90 37 67 38 49 61 34 41 40 66 5 89</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61 80 62 37 1 65 67 38 21 49 88 91 87 90 63 64 41 40 34 59 6 56 5 66 89 57 10 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\rtc_alarm.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 117 109 92 84 82 81 70 108 71 73 115 113 116 114</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\RTC_LEDBlink.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 42 91 62 90 80 5 21 56 59 19 87 31 44 63 64 61 65 58 54 51 67 53 48 49 3 55 45 34 41 40 37 38 6 66 52 88 39 23 0 10 50 57 89 4 22 68 26 7 24</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 44 10 58 91 87 3 54 31 42 55 51 88 52 4 49 0 68 19 39 23 22 26 7 53 48 24 21 45</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\src\services\gpio\adi_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65 61 80 10 91 56 59 31 58 42 94 63 64 62 1 57 89 66 7 34 41 40 37 67 38 6 5 49 8 93 87 88 90</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 94 10 58 91 87 49 88 7 8 31 42 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\RTC_LEDBlink_Hiberbate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 42 91 62 34 5 90 21 37 19 80 87 31 40 67 38 6 58 54 51 53 48 49 3 55 45 44 63 64 56 61 59 1 65 66 52 88 39 23 0 10 50 57 89 4 22 68 26 7 24</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 90 63 64 41 40 34 61 80 62 37 1 65 67 38 59 6 56 5 66 89 57 44 10 58 91 87 3 54 31 42 55 51 88 52 4 49 0 68 19 39 23 22 26 7 53 48 24 21 45</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

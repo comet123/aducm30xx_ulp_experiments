@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3509751296</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\tmr\adi_tmr_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\tmr\adi_tmr_data_v1.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\tmr\adi_tmr.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\dma\adi_dma_pl230_v2.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\drivers\uart\adi_uart_data_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\drivers\uart\adi_uart_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\tmr\adi_tmr_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\config\adi_tmr_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\drivers\uart\adi_uart_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\drivers\uart\adi_uart_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\wdt\adi_wdt_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\config\adi_uart_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\drivers\uart\adi_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\wdt\adi_wdt_v1.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\dma\adi_dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\wdt\adi_wdt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\wdt\adi_wdt_v1.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\..\timer_example.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\config\adi_wdt_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\common.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\startup.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\timer_example.out</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\gpio\adi_gpio_v1.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_tmr.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_uart.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_tmr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_wdt.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer_example.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_pwr.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer_example.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer_example.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_wdt.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\config\linker\AnalogDevices\ADuCM3029.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_pwr.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_tmr.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_uart.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\config\adi_pwr_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\gpio\adi_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\system.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\ssdd_common\common_def.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\pwr\adi_pwr_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\ADuCM3029_cdef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\ADuCM3029.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\adi_processor.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\pwr\adi_pwr_v1.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm3.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\int\adi_int.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\sys\ADuCM302x_device.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\tmr\adi_tmr_v1.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\tmr\adi_tmr.c</file>
+      <file>D:\pwm.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\pwr\adi_pwr.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\drivers\uart\adi_uart.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\wdt\adi_wdt.c</file>
+      <file>$PROJ_DIR$\..\..\timer_example.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\common.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\startup.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\pwm.pbi</file>
+      <file>$PROJ_DIR$\..\..\Readme_timer_example.html</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\system.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\services\pwr\adi_pwr.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\adi_types.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\sys\ADuCM302x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\sys\ADuCM302x_typedefs.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\config\adi_global_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\sys\ADuCM302x_cdef.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\pwr\adi_pwr_def_v1.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\inc\ADuCM3029_device.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_pwr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_uart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_wdt.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer_example.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\pwm.o</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\gpio\adi_gpio_def_v1.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_gpio.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_gpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\gpio\adi_gpio_v1.c</file>
+      <file>$PROJ_DIR$\..\..\GPT_LEDBlink.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPT_LEDBlink.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPT_LEDBlink.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPT_LEDBlink.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\adi_gpio.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\..\..\src\services\gpio\adi_gpio.c</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\timer_example.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 45 108 36 30 31 33 99 112 27 100 42 44 43 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\services\tmr\adi_tmr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67 63 65 66 69 70 52 71 89 88 72 61 60 58 97 57 0 96 94 90 87 91 86 92 85 4 1 62 68 51 2 56 3 8 9 93 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 61 60 94 90 96 58 67 63 87 65 97 91 86 69 92 66 85 57 52 70 72 2 88 3 71 4 8 68 93 89 50 9 56 0 1 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\pwm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 67 61 105 60 68 4 65 63 18 88 19 58 50 23 97 91 62 66 69 57 93 11 84 55 87 86 20 51 2 14 3 96 94 90 92 85 71 13 89 8 9 70 52 22 17 5 59</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 67 63 87 65 97 91 86 16 88 20 23 51 105 2 3 18 62 61 60 94 90 96 69 92 66 85 57 52 70 19 89 50 68 93 22 14 11 71 17 5 84 59 13 55 4 8 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\services\pwr\adi_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 70 67 66 69 65 68 63 62 64 61 60 58 97 95 88 89 96 94 90 87 91 86 92 85 57 55 84 93 59 52 51 56 53 54 50 105 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 61 60 94 90 96 58 67 63 87 65 97 91 86 69 92 66 85 57 52 70 64 51 88 68 93 89 50 55 105 56 95 53 84 59 54 29</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\drivers\uart\adi_uart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 67 68 91 86 63 92 66 69 105 10 61 60 58 87 11 84 88 3 62 96 94 90 65 97 85 56 89 50 71 13 5 59 70 52 14 6 93 2 17 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 61 60 94 90 96 58 67 63 87 65 97 91 86 69 92 66 85 57 52 70 10 13 93 56 68 89 50 14 11 105 88 2 3 71 17 5 84 59 6 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\services\wdt\adi_wdt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97 58 67 2 63 93 88 66 69 18 15 61 60 65 70 52 57 105 96 94 90 87 91 86 92 85 68 56 12 50 62 3 89 19 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 61 60 94 90 96 58 67 63 87 65 97 91 86 69 92 66 85 57 52 70 15 2 88 3 68 93 89 50 105 56 18 19 22 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\timer_example.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91 86 63 67 2 88 90 57 89 4 20 58 17 23 21 87 51 14 3 96 94 92 70 52 22 50 5 59 16 55 84 65 97 105 18 62 19 61 60 66 69 93 68 85 11 71 13 8 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 67 63 87 65 97 91 86 16 88 20 23 51 105 2 3 18 62 61 60 94 90 96 69 92 66 85 57 52 70 19 89 50 68 93 22 14 11 71 17 5 84 59 13 55 4 8 9 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\common.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88 18 63 90 17 16 87 91 57 5 59 105 86 67 3 96 94 92 70 52 22 58 50 51 2 14 65 97 20 62 19 61 60 66 69 89 93 68 23 85 11 71 84 13</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23 58 67 63 87 65 97 91 86 16 88 20 51 105 2 3 18 62 61 60 94 90 96 69 92 66 85 57 52 70 19 89 50 68 93 22 14 11 71 17 5 84 59 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69 66 91 86 63 92 62 85 105 93 61 60 58 87 57 67 55 89 96 94 90 65 97 70 52 88 24 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 62 61 60 94 90 96 58 67 63 87 65 97 91 86 69 92 66 85 57 52 70 89 50 93 55 105 88</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\system.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91 86 63 105 93 58 96 94 69 92 68 87 62 90 70 55 67 65 97 89 88 50 61 60 66 57 85 52</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 67 63 87 65 97 91 86 55 105 88 89 50 62 61 60 94 90 96 69 92 66 85 57 52 70 68 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\GPT_LEDBlink.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 91 86 63 67 2 88 90 4 20 58 57 89 68 23 54 87 51 14 3 96 94 92 70 52 22 50 5 59 16 55 84 65 97 105 18 62 19 61 60 66 69 93 85 11 71 13 8 9 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58 67 63 87 65 97 91 86 16 88 20 23 51 105 2 3 18 62 61 60 94 90 96 69 92 66 85 57 52 70 19 89 50 68 93 22 14 11 71 17 5 84 59 13 55 4 8 9 54 29</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\src\services\gpio\adi_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97 58 67 68 89 66 69 54 93 29 110 61 60 63 65 70 52 57 71 96 94 90 87 91 86 92 85 105 56 107 50 88 62</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 61 60 94 90 96 58 67 63 87 65 97 91 86 69 92 66 85 57 52 70 110 68 93 89 50 105 88 71 56 54 29 107</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
