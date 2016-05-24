@@ -25,7 +25,7 @@ if not "%1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Analog Devices\ADuCM302x\ADuCM302x_EZ_Kit_Lite\examples\rtc\Rtc_alarm\ADuCM3029\iar\settings\rtc_alarm.Debug.general.xcl" --backend -f "C:\Analog Devices\ADuCM302x\ADuCM302x_EZ_Kit_Lite\examples\rtc\Rtc_alarm\ADuCM3029\iar\settings\rtc_alarm.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\ANataraj\Desktop\aducm30xx_ulp_experiments\ulp_expt_led\RTC\ADuCM3029\iar\settings\rtc_alarm.Debug.general.xcl" --backend -f "C:\Users\ANataraj\Desktop\aducm30xx_ulp_experiments\ulp_expt_led\RTC\ADuCM3029\iar\settings\rtc_alarm.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Analog Devices\ADuCM302x\ADuCM302x_EZ_Kit_Lite\examples\rtc\Rtc_alarm\ADuCM3029\iar\settings\rtc_alarm.Debug.general.xcl" "--debug_file=%1" --backend -f "C:\Analog Devices\ADuCM302x\ADuCM302x_EZ_Kit_Lite\examples\rtc\Rtc_alarm\ADuCM3029\iar\settings\rtc_alarm.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\common\bin\cspybat" -f "C:\Users\ANataraj\Desktop\aducm30xx_ulp_experiments\ulp_expt_led\RTC\ADuCM3029\iar\settings\rtc_alarm.Debug.general.xcl" "--debug_file=%1" --backend -f "C:\Users\ANataraj\Desktop\aducm30xx_ulp_experiments\ulp_expt_led\RTC\ADuCM3029\iar\settings\rtc_alarm.Debug.driver.xcl" 
 
 @echo off 
 :end

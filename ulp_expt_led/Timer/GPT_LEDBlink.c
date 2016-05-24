@@ -3,10 +3,11 @@
 #include "common.h"
 #include "system.h"
 #include <services/tmr/adi_tmr.h>
+
 #include <services/pwr/adi_pwr.h>
 #include <services/gpio/adi_gpio.h>
 
-static const uint16_t GPT1_LOAD_1SEC     = 50795;
+static const uint16_t GPT1_LOAD_2SEC     = 50795;
 static uint8_t aDeviceMemory1[ADI_TMR_MEMORY_SIZE];
 
 static uint8_t gpioMemory[ADI_GPIO_MEMORY_SIZE];
@@ -36,6 +37,9 @@ int main(void)
     
     adi_pwr_Init(); //power init
     
+    /*  CLOCK SCALED TO REDUCE POWER CONSUMPTION - 26 MHz HCLK precaled by 26 */
+    adi_pwr_SetClockDivider(ADI_CLOCK_HCLK,26);        
+    
     adi_gpio_Init(gpioMemory, ADI_GPIO_MEMORY_SIZE); //GPIO init
     
     adi_gpio_OutputEnable(ADI_GPIO_PORT1,ADI_GPIO_PIN_12,true);  //make LED-4 as output
@@ -46,8 +50,10 @@ int main(void)
   adi_tmr_RegisterCallback( hDevice1, GPTimer1Callback ,hDevice1);
       
   adi_tmr_SetPrescaler(hDevice1, ADI_GPT_PRESCALER_256);
-  adi_tmr_SetLoadValue( hDevice1, GPT1_LOAD_1SEC);
+  adi_tmr_SetLoadValue( hDevice1, GPT1_LOAD_2SEC);
   adi_tmr_Enable(hDevice1,true);
+  
+
   
   while(1);
 }
