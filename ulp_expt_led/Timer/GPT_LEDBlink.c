@@ -3,10 +3,11 @@
 #include "common.h"
 #include "system.h"
 #include <services/tmr/adi_tmr.h>
+
 #include <services/pwr/adi_pwr.h>
 #include <services/gpio/adi_gpio.h>
 
-static const uint16_t GPT1_LOAD_1SEC     = 50795;
+static const uint16_t GPT1_LOAD_2SEC     = 50795;
 static uint8_t aDeviceMemory1[ADI_TMR_MEMORY_SIZE];
 
 static uint8_t gpioMemory[ADI_GPIO_MEMORY_SIZE];
@@ -34,7 +35,7 @@ int main(void)
     /* test system initialization */
     test_Init();
     
-    adi_pwr_Init(); //power init
+    adi_pwr_Init(); //power init      
     
     adi_gpio_Init(gpioMemory, ADI_GPIO_MEMORY_SIZE); //GPIO init
     
@@ -46,8 +47,13 @@ int main(void)
   adi_tmr_RegisterCallback( hDevice1, GPTimer1Callback ,hDevice1);
       
   adi_tmr_SetPrescaler(hDevice1, ADI_GPT_PRESCALER_256);
-  adi_tmr_SetLoadValue( hDevice1, GPT1_LOAD_1SEC);
+  adi_tmr_SetLoadValue( hDevice1, GPT1_LOAD_2SEC);
   adi_tmr_Enable(hDevice1,true);
+  
+  /*    SWITCHED TO LOW POWER MODE - ACTIVE MODE    */
+  adi_pwr_EnterLowPowerMode(ADI_PWR_MODE_ACTIVE,NULL,0x00);                    //Low pwr mode - Active mode
+  /*    BUCK CONVERTER ENABLED TO REDUCE POWER      */
+  adi_pwr_EnableHPBuck(true);                                                  //Enable buck converter to reduce power
   
   while(1);
 }
