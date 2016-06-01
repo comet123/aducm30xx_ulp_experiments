@@ -12,8 +12,11 @@ ADI_RTC_HANDLE hDeviceRTC  = NULL;
 /* Binary flag to indicate RTC interrupt occured */
 volatile bool_t bRtcInterrupt;
 
-#define RTC_ALARM_OFFSET1   2
+#define MAXCOUNT 2000000
+int i;
 
+#define RTC_ALARM_OFFSET1   10
+ADI_PWR_RESULT pwrResult;
 ADI_RTC_RESULT rtc_Init (void) {
 
     /* callbacks */
@@ -79,19 +82,23 @@ ADI_RTC_RESULT rtc_UpdateAlarm (void) {
 
 void rtc0Callback (void *pCBParam, uint32_t nEvent, void *EventArg) {
 
-    bRtcInterrupt = true;
+  bRtcInterrupt = true;
 
    if (ADI_RTC_ALARM_INT & nEvent) 
     {
         DEBUG_MESSAGE("RTC interrupt");
-        adi_gpio_Toggle(ADI_GPIO_PORT1, ADI_GPIO_PIN_12);
+     // adi_gpio_SetHigh(ADI_GPIO_PORT1, ADI_GPIO_PIN_12);
         
          /* Update RTC alarm */
         rtc_UpdateAlarm();
 	
     }
-
+   for(i=0;i<MAXCOUNT;i++); 
+    //adi_gpio_SetLow(ADI_GPIO_PORT1, ADI_GPIO_PIN_12);
 }
+
+
+
 
 int main(void)
 {
@@ -108,9 +115,11 @@ int main(void)
     
     adi_gpio_OutputEnable(ADI_GPIO_PORT1,ADI_GPIO_PIN_12,true);  //make LED-4 as output
     
-    adi_gpio_SetLow(ADI_GPIO_PORT1,ADI_GPIO_PIN_12);             //Set Low LED-4
+    adi_gpio_SetHigh(ADI_GPIO_PORT1,ADI_GPIO_PIN_12);             //Set Low LED-4
     
-    adi_pwr_EnterLowPowerMode(ADI_PWR_MODE_HIBERNATE,NULL,0x00);
+    pwrResult = adi_pwr_EnterLowPowerMode(ADI_PWR_MODE_HIBERNATE,NULL,0x00);
+    DEBUG_RESULT("\n Failed to enter low power mode %04d",pwrResult,ADI_PWR_SUCCESS);
+    
     
     while(1);
 }
