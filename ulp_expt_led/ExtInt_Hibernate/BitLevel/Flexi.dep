@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>727991840</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+      <file>$PROJ_DIR$\include\pm.h</file>
+      <file>$PROJ_DIR$\include\util.h</file>
+      <file>$PROJ_DIR$\include\util_legacy.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\LV codes\main.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main_prime.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\include\startup.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main_prime.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main_prime.o</file>
+      <file>$PROJ_DIR$\include\dma_defines.h</file>
+      <file>$PROJ_DIR$\include\hpp.h</file>
+      <file>$PROJ_DIR$\include\LPP.h</file>
+      <file>$PROJ_DIR$\include\mmr_xml.h</file>
+      <file>$PROJ_DIR$\include\SRAM.h</file>
+      <file>$PROJ_DIR$\include\mmr_legacy.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main1.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.pbi</file>
+      <file>$PROJ_DIR$\include\microglue_typedefs.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\include\system.h</file>
+      <file>$PROJ_DIR$\include\lpp_type.h</file>
+      <file>$PROJ_DIR$\main_prime.c</file>
+      <file>$PROJ_DIR$\include\RTC_ALIAS.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main1.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main_hibernate.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\main_hibernate.o</file>
+      <file>$TOOLKIT_DIR$\config\linker\AnalogDevices\ADuCM3029.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\main_hibernate.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\include\IRQ.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\pm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\memcheck.o</file>
+      <file>$PROJ_DIR$\include\device.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\memcheck.pbi</file>
+      <file>$PROJ_DIR$\include\microglue_device.h</file>
+      <file>$PROJ_DIR$\include\rtc.h</file>
+      <file>$PROJ_DIR$\memcheck.c</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm3.h</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\Flexi.pbd</file>
+      <file>$PROJ_DIR$\include\microglue_peripherals.h</file>
+      <file>$PROJ_DIR$\include\irq_cmsis.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\include\util_defs.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\memcheck.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+      <file>$PROJ_DIR$\include\cache.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\pm.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\pm.c</file>
+      <file>$PROJ_DIR$\startup.c</file>
+      <file>$PROJ_DIR$\main_hibernate.c</file>
+      <file>$PROJ_DIR$\system.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\pm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\include\IRQ_legacy.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\include\microglue.h</file>
+      <file>$PROJ_DIR$\include\gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\main1.c</file>
+      <file>$PROJ_DIR$\include\GPT.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 37 36 42 64 56 52 9 46 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\LV codes\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3 74 5 18 11 19 77 10 57 4 20 40 79 29 58 76 14 34 59 21 75 22 2 23</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2 3 29 11 74 57 10 76 34 59 14 4 58 77 5 20 21 23 19 40 75 18 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main_prime.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 51 86 76 74 60 27 65 81 10 57 1 67 2 14 4 26 5 44 77 28 49 41 48 54 40 82 55 34 59 3 29 58 8 75 45 7 39 31 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 67 57 10 76 34 59 14 4 27 48 5 26 81 54 2 3 29 11 74 58 77 40 75 86 82 1 55 51 45 7 60 8 28 39 49 31 65 41 83</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54 27 5 11 57 65 82 10 58 7 1 48 40 55 4 79 44 77 28 49 41 67 81 2 86 51 14 76 34 59 26 29 45 3 74 75 8 60 39 31 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 67 57 10 76 34 59 14 4 27 48 5 26 81 54 2 3 29 11 74 58 77 40 75 86 82 1 55 51 45 7 60 8 28 39 49 31 65 41 83</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\memcheck.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 77 76 3 74 14 4 10 79 29 58 11 5 2 34 59</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2 3 29 11 74 57 10 76 34 59 14 4 58 77 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55 11 10 48 76 40 57 5 14 4 54 82 26 74 77 8 44 34 59 67 81 2 86 1 51 27 3 29 58 75 60 45 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1 11 5 57 10 76 34 59 14 4 44 67 27 48 26 81 54 2 3 29 74 58 77 40 75 86 82 55 51 45 7 60 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81 44 27 14 4 10 77 86 51 3 29 8 67 2 1 57 76 5 28 48 54 40 82 55 34 59 26 58 11 7 15 74 75 45 60 39</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15 44 67 57 10 76 34 59 14 4 27 48 5 26 81 54 2 3 29 11 74 58 77 40 75 86 82 1 55 51 45 7 60 8 28 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main_hibernate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54 57 27 59 10 60 65 82 5 77 58 1 48 40 55 34 3 29 75 11 44 28 49 41 67 81 2 86 51 14 76 4 26 74 8 45 7 39 31 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 67 57 10 76 34 59 14 4 27 48 5 26 81 54 2 3 29 11 74 58 77 40 75 86 82 1 55 51 45 7 60 8 28 39 49 31 65 41 83</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\system.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81 10 57 27 14 4 39 86 51 75 76 67 2 1 26 74 11 5 8 28 34 59 44 48 54 40 82 55 3 77 29 58 60 45 7</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 57 10 76 34 59 14 4 28 39 27 44 67 48 26 81 54 2 3 29 11 74 58 77 40 75 86 82 1 55 51 45 7 60 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 79 54 10 41 82 27 14 45 1 48 40 55 29 5 8 67 28 49 81 2 86 51 76 4 34 59 26 58 75 11 44 77 3 74 7 60 39 31 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 67 57 10 76 34 59 14 4 27 48 5 26 81 54 2 3 29 11 74 58 77 40 75 86 82 1 55 51 45 7 60 8 28 39 49 31 41 83</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
