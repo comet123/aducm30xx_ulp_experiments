@@ -121,17 +121,17 @@ ADI_RTC_RESULT rtc_Calibrate (void) {
     
     if(ADI_RTC_SUCCESS != (eResult = adi_rtc_SetTrim(hDevice0,ADI_RTC_TRIM_INTERVAL_14,ADI_RTC_TRIM_1,ADI_RTC_TRIM_SUB)))
     {
-        printf("\n Failed to set the device %04d",eResult);
+       // printf("\n Failed to set the device %04d",eResult);
         return(eResult);
     }
     if(ADI_RTC_SUCCESS != (eResult = adi_rtc_EnableTrim(hDevice0,true)))
     {
-        printf("\n Failed to enable the trim  %04d",eResult);
+      //  printf("\n Failed to enable the trim  %04d",eResult);
         return(eResult);
     }
  
 #else
-    printf("Use \"ADI_RTC_CALIBRATE\" preprocessor macro for RTC calibration.");
+   // printf("Use \"ADI_RTC_CALIBRATE\" preprocessor macro for RTC calibration.");
 #endif
     return(eResult);       
 }
@@ -142,12 +142,12 @@ ADI_RTC_RESULT rtc_UpdateAlarm (void) {
     
     if(ADI_RTC_SUCCESS != (eResult = adi_rtc_GetCount(hDevice0,&rtcCount)))
     {
-        DEBUG_RESULT("\n Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
+       // DEBUG_RESULT("\n Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
         return(eResult);
     }
     if(ADI_RTC_SUCCESS != (eResult = adi_rtc_SetAlarm(hDevice0,rtcCount+RTC_ALARM_OFFSET)))
     {
-        DEBUG_RESULT("\n Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
+       //DEBUG_RESULT("\n Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
         return(eResult);
     }
     return(eResult);    
@@ -179,7 +179,7 @@ int main (void)
     /* initialize driver */
     if(ADI_RTC_SUCCESS !=rtc_Init())
     {
-      DEBUG_MESSAGE("\nFailed to initialize RTC device \n");
+      //DEBUG_MESSAGE("\nFailed to initialize RTC device \n");
     }
 
     /* calibrate */
@@ -187,15 +187,6 @@ int main (void)
 
     /* test alarm */
     eResult =  rtc_AlarmTest();
-
-    if(eResult == ADI_RTC_SUCCESS)
-    {
-      DEBUG_MESSAGE("All done! RTC example completed successfully");
-    }
-    else
-    {
-      DEBUG_MESSAGE("\n RTC test failed \n");
-    }
 
 }
 
@@ -212,38 +203,38 @@ ADI_RTC_RESULT rtc_Init (void) {
     do
     {
         eResult = adi_rtc_Open(RTC_DEVICE_NUM,aRtcDevMem0,ADI_RTC_MEMORY_SIZE,&hDevice0);
-        DEBUG_RESULT("\n Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
+       // DEBUG_RESULT("\n Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
         
         eResult = adi_rtc_RegisterCallback(hDevice0,rtc0Callback,hDevice0);
-        DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
+       // DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
         
         eResult = adi_rtc_SetCount(hDevice0,buildTime);
-        DEBUG_RESULT("Failed to set the count",eResult,ADI_RTC_SUCCESS);
+        //DEBUG_RESULT("Failed to set the count",eResult,ADI_RTC_SUCCESS);
         
         eResult = adi_rtc_SetTrim(hDevice0,ADI_RTC_TRIM_INTERVAL,ADI_RTC_TRIM_VALUE,ADI_RTC_TRIM_DIRECTION);
-        DEBUG_RESULT("Failed to set the trim value",eResult,ADI_RTC_SUCCESS);
+       // DEBUG_RESULT("Failed to set the trim value",eResult,ADI_RTC_SUCCESS);
         
         eResult = adi_rtc_EnableTrim(hDevice0,true);
-        DEBUG_RESULT("Failed to enable the trim",eResult,ADI_RTC_SUCCESS);
+      //  DEBUG_RESULT("Failed to enable the trim",eResult,ADI_RTC_SUCCESS);
         
         eResult = adi_rtc_EnableAlarm(hDevice0,false);
-        DEBUG_RESULT("Failed to enable the alram ",eResult,ADI_RTC_SUCCESS);
+        //DEBUG_RESULT("Failed to enable the alram ",eResult,ADI_RTC_SUCCESS);
         
         eResult = adi_rtc_EnableInterrupts(hDevice0, nInterrupts,true);
-        DEBUG_RESULT("Failed to enable the specified interrupts",eResult,ADI_RTC_SUCCESS);
+       // DEBUG_RESULT("Failed to enable the specified interrupts",eResult,ADI_RTC_SUCCESS);
        
         
 #ifdef ADI_RTC_RESET
     /* force a reset to the latest build timestamp */
-        DEBUG_MESSAGE("Resetting clock");
+        //DEBUG_MESSAGE("Resetting clock");
         eResult = adi_rtc_SetCount(hDevice0, buildTime);
-        DEBUG_RESULT("Failed to set count",eResult,ADI_RTC_SUCCESS);
+       // DEBUG_RESULT("Failed to set count",eResult,ADI_RTC_SUCCESS);
         
-        DEBUG_MESSAGE("New time is:");
+       // DEBUG_MESSAGE("New time is:");
         rtc_ReportTime();
 #endif
         eResult = adi_rtc_Enable(hDevice0,true);
-        DEBUG_RESULT("Failed to enable the device",eResult,ADI_RTC_SUCCESS);
+        //DEBUG_RESULT("Failed to enable the device",eResult,ADI_RTC_SUCCESS);
        
     }while(0); 
     
@@ -261,39 +252,39 @@ ADI_RTC_RESULT rtc_AlarmTest (void) {
 
     /* enable alarm interrupting */
     eResult = adi_rtc_EnableInterrupts(hDevice0, ADI_RTC_ALARM_INT, true);
-    DEBUG_RESULT("adi_RTC_EnableInterrupts failed",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("adi_RTC_EnableInterrupts failed",eResult,ADI_RTC_SUCCESS);
 
     /* enable RTC alarm */
     eResult = adi_rtc_EnableAlarm(hDevice0, true);
-    DEBUG_RESULT("adi_RTC_EnableAlarm failed",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("adi_RTC_EnableAlarm failed",eResult,ADI_RTC_SUCCESS);
 
      /* enable alarm interrupting */
     eResult = adi_rtc_EnableInterrupts(hDevice0, ADI_RTC_ALARM_INT, true);
-    DEBUG_RESULT("adi_RTC_EnableInterrupts failed",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("adi_RTC_EnableInterrupts failed",eResult,ADI_RTC_SUCCESS);
 
     eResult = adi_rtc_Open(RTC_DEVICE_NUM_FOR_WUT,aRtcDevMem1,ADI_RTC_MEMORY_SIZE,&hDevice1);
-    DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
+  //  DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
     
     eResult = adi_rtc_RegisterCallback(hDevice1,rtc1Callback,hDevice1);
-    DEBUG_RESULT("Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("Failed to open the device %04d",eResult,ADI_RTC_SUCCESS);
        
     eResult = adi_rtc_SetTrim(hDevice1,ADI_RTC_TRIM_INTERVAL_6,ADI_RTC_TRIM_4,ADI_RTC_TRIM_ADD);
-    DEBUG_RESULT("Failed to open the device  ",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("Failed to open the device  ",eResult,ADI_RTC_SUCCESS);
     
     eResult = adi_rtc_EnableTrim(hDevice1,true);
-    DEBUG_RESULT("\n Failed to open the device ",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("\n Failed to open the device ",eResult,ADI_RTC_SUCCESS);
     
     eResult = adi_rtc_GetCount(hDevice0,&nRtc1Count);
-    DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
         
     eResult = adi_rtc_SetAlarm(hDevice1,(2*RTC_ALARM_OFFSET*ADI_RTC_NUM_ALARMS*10) + nRtc1Count);
-    DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
     
     eResult = adi_rtc_EnableAlarm(hDevice1,true);
-    DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
+  //  DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
     
     eResult = adi_rtc_EnableInterrupts(hDevice1,ADI_RTC_ALARM_INT,true);
-    DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
     
     /* Update RTC alarm */
     rtc_UpdateAlarm();
@@ -301,10 +292,10 @@ ADI_RTC_RESULT rtc_AlarmTest (void) {
     bHibernateExitFlag = false;
     
     eResult = adi_rtc_Enable(hDevice1,true);
-    DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
+   // DEBUG_RESULT("Failed to open the device",eResult,ADI_RTC_SUCCESS);
    
     /* go to sleep and await RTC ALARM interrupt */
-    DEBUG_MESSAGE("ALARM test starting at:");
+   // DEBUG_MESSAGE("ALARM test starting at:");
     
     rtc_ReportTime();
 
@@ -313,32 +304,32 @@ ADI_RTC_RESULT rtc_AlarmTest (void) {
 
     if (adi_pwr_EnterLowPowerMode(ADI_PWR_MODE_HIBERNATE, &bHibernateExitFlag, 0))
     {
-        DEBUG_MESSAGE("System Entering to Low Power Mode failed");
+       // DEBUG_MESSAGE("System Entering to Low Power Mode failed");
     }
 
-    DEBUG_MESSAGE("\nALARM example complete at:");
+   // DEBUG_MESSAGE("\nALARM example complete at:");
     
     rtc_ReportTime();
 
     /* verify expected results */
     if (bWutInterrupt) 
     {
-        printf("rtc_AlarmTest got unexpected WUT interrupt");
+      //  printf("rtc_AlarmTest got unexpected WUT interrupt");
         return(ADI_RTC_FAILURE);
     }
     if (!bRtcInterrupt)
     {
-        DEBUG_MESSAGE("rtc_AlarmTest failed to get expected RTC interrupt");
+       // DEBUG_MESSAGE("rtc_AlarmTest failed to get expected RTC interrupt");
         return(ADI_RTC_FAILURE);      
     }
     if (!bRtcAlarmFlag)  
     {
-        DEBUG_MESSAGE("rtc_AlarmTest failed to get expected RTC ALARM interrupts");
+       // DEBUG_MESSAGE("rtc_AlarmTest failed to get expected RTC ALARM interrupts");
         return(ADI_RTC_FAILURE);      
     }
     /* disable alarm */    
     eResult = adi_rtc_EnableAlarm(hDevice0,false);
-    DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
+    //DEBUG_RESULT("\n Failed to open the device",eResult,ADI_RTC_SUCCESS);
     
     return(eResult);   
 }
@@ -357,17 +348,17 @@ void rtc_ReportTime(void) {
     time(&rawtime);
 
     // print raw count
-    sprintf (buffer, "Raw time: %d", rawtime);
-    DEBUG_MESSAGE(buffer);
+   // sprintf (buffer, "Raw time: %d", rawtime);
+    //DEBUG_MESSAGE(buffer);
 
     // convert to UTC string and print that too
-    sprintf (buffer, "UTC time: %s", ctime(&rawtime));
-    DEBUG_MESSAGE(buffer);
+    //sprintf (buffer, "UTC time: %s", ctime(&rawtime));
+   // DEBUG_MESSAGE(buffer);
 
 #else
 
-    sprintf(buffer, "Use preprocessor macro \"ADI_RTC_USE_IAR_SYSTEM_TIME_HOOKS\" to enable system time hooks.");
-    DEBUG_MESSAGE(buffer);
+    //sprintf(buffer, "Use preprocessor macro \"ADI_RTC_USE_IAR_SYSTEM_TIME_HOOKS\" to enable system time hooks.");
+   // DEBUG_MESSAGE(buffer);
 
 #endif
 }
@@ -424,37 +415,41 @@ uint32_t BuildSeconds(void)
 /* RTC-0 Callback handler */
 void rtc0Callback (void *pCBParam, uint32_t nEvent, void *EventArg) {
 
+    
+    /* Clear RTC Interrupt status for the next RTC interrupt */
+    adi_rtc_ClearInterruptStatus(hDevice0,ADI_RTC_ALARM_INT);
+    
     bRtcInterrupt = true;
 
     /* process RTC interrupts (cleared by driver) */
     if (ADI_RTC_WRITE_PEND_INT &  nEvent) 
     {
-        DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_WRITE_PEND status");
+       // DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_WRITE_PEND status");
     }
 
     if (ADI_RTC_WRITE_SYNC_INT &nEvent) 
     {
-        DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_WRITE_SYNC status");
+       // DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_WRITE_SYNC status");
     }
 
     if (ADI_RTC_WRITE_PENDERR_INT &  nEvent) 
     {
-        DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_WRITE_PENDERR status");
+       // DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_WRITE_PENDERR status");
     }
 
     if (ADI_RTC_ISO_DONE_INT & nEvent) 
     {
-        DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_ISO_DONE status");
+      //  DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_ISO_DONE status");
     }
 
     if (ADI_RTC_MOD60ALM_INT & nEvent) 
     {
-        DEBUG_MESSAGE("Got RTC interrupt callbackwithon ADI_RTC_INT_SOURCE_MOD60_ALARM status");
+      //  DEBUG_MESSAGE("Got RTC interrupt callbackwithon ADI_RTC_INT_SOURCE_MOD60_ALARM status");
     }
 
     if (ADI_RTC_ALARM_INT & nEvent) 
     {
-        DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_ALARM status");
+       // DEBUG_MESSAGE("Got RTC interrupt callback with ADI_RTC_INT_SOURCE_ALARM status");
 
         /* Update alarm count */
         AlarmCount++;
@@ -463,7 +458,9 @@ void rtc0Callback (void *pCBParam, uint32_t nEvent, void *EventArg) {
         if (AlarmCount >= ADI_RTC_NUM_ALARMS)
         {
             bRtcAlarmFlag = true;       // note alarm flag
-            bHibernateExitFlag = true;  // exit hibernation on return from interrupt
+           // bHibernateExitFlag = true;  // exit hibernation on return from interrupt
+             /* flagHib is set to 'true' in adi_pwr_ExitLowPowerMode() to exit hibernate mode */
+            adi_pwr_ExitLowPowerMode(&bHibernateExitFlag);   
         }
         /* ELSE (more alarms needed) */
         else
